@@ -125,7 +125,7 @@ void UPushbackAttack::DoWithHitEnemies(TArray<FHitResult> Hits)
 		if (Hit.bBlockingHit)
 			if (Cast<APawn>(Hit.Actor))
 				Cast<ACharacter>(Hit.GetActor())->GetCharacterMovement()->AddImpulse(-Hit.ImpactNormal * PushBackPower);
-	
+
 	ClearHitEnemies();
 }
 
@@ -204,8 +204,6 @@ void UPierceAttack::BP_UseAttack_Implementation()
 }
 
 
-
-
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -218,7 +216,41 @@ void UDashAttack::BP_UseAttack_Implementation()
 
 	StartActorLocation = GetWeaponOwner()->GetActorLocation();
 
-	EndActorLocation = StartActorLocation + GetWeaponOwner()->GetActorForwardVector() * GetWeaponDistance() * DashDistanceMultiplication;
+	switch (DashDirection)
+	{
+	case DD_Forward:
+		EndActorLocation = StartActorLocation + GetWeaponOwner()->GetActorForwardVector() * GetWeaponDistance() *
+			DashDistanceMultiplication;
+		break;
+	case DD_Back:
+		EndActorLocation = StartActorLocation + GetWeaponOwner()->GetActorForwardVector() * -1.f * GetWeaponDistance() *
+			DashDistanceMultiplication;
+		break;
+	case DD_Right:
+		EndActorLocation = StartActorLocation + GetWeaponOwner()->GetActorRightVector() * GetWeaponDistance() *
+			DashDistanceMultiplication;
+		break;
+	case DD_Left:
+		EndActorLocation = StartActorLocation + GetWeaponOwner()->GetActorRightVector() * -1.f * GetWeaponDistance() *
+			DashDistanceMultiplication;
+		break;
+	case DD_InVelocity:
+		{
+			FVector Velocity = GetWeaponOwner()->GetVelocity();
+			if (Velocity.Size() > 0.f)
+				EndActorLocation = StartActorLocation + Velocity.ForwardVector * -1.f * GetWeaponDistance() *
+					DashDistanceMultiplication;
+			else
+				EndActorLocation = StartActorLocation + GetWeaponOwner()->GetActorForwardVector() * GetWeaponDistance()
+					* DashDistanceMultiplication;
+			break;
+		}
+	default:
+		EndActorLocation = StartActorLocation + GetWeaponOwner()->GetActorForwardVector() * GetWeaponDistance() *
+			DashDistanceMultiplication;
+		break;
+	}
+
 
 	GetWorld()->GetTimerManager().SetTimer(DashTimer, this, &UDashAttack::Dash, TimerRate, true);
 
@@ -316,7 +348,7 @@ void UProjectileAttack::Shoot()
 		Cast<APawn>(GetWeaponOwner()),
 		ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn);
 
-	if(Projectile)
+	if (Projectile)
 	{
 		Projectile->SetAttackRef(this);
 		Projectile->FinishSpawning(ProjectileTransform);

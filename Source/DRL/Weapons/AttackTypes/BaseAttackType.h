@@ -158,7 +158,7 @@ protected:
 	virtual void DoWithHitEnemies(TArray<FHitResult> Hits) override;
 
 private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "PushBack")
 	float PushBackPower = 40000.f;
 	
 };
@@ -189,6 +189,18 @@ private:
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------
 
+UENUM()
+enum EDashDirection
+{
+	DD_Forward UMETA(DisplayName = "Forward"),
+	DD_Right UMETA(DisplayName = "Right"),
+	DD_Left UMETA(DisplayName = "Left"),
+	DD_Back UMETA(DisplayName = "Back"),
+	DD_InVelocity UMETA(DisplayName = "InVelocity"),
+
+	DD_MAX,
+};
+
 UCLASS()
 class UDashAttack : public UBaseAttackType
 {
@@ -203,25 +215,27 @@ protected:
 	UFUNCTION(BlueprintNativeEvent)
 	void AfterDash();
 
-private:	
-	UPROPERTY(EditAnywhere, Category = "Dash")
+private:
+	UPROPERTY(EditAnywhere, Category = "Dash|Distance")
 	float DashDistanceMultiplication = 4.f;
-	UPROPERTY(EditAnywhere, Category = "Dash")
+	UPROPERTY(EditAnywhere, Category = "Dash|Time")
 	float DashTime = 0.3f;
+
+	UPROPERTY(EditAnywhere, Category = "Dash|Distance")
+	TEnumAsByte<EDashDirection> DashDirection = DD_Forward;
 
 	UPROPERTY(EditAnywhere, Category = "Dash")
 	bool HiddenActorWhileDash = false;
 	UPROPERTY(EditAnywhere, Category = "Dash")
 	TArray<TEnumAsByte<ECollisionChannel>> CollisionChannelsToIgnore;
 	
-	UPROPERTY(EditAnywhere, Category = "Dash")
+	UPROPERTY(EditAnywhere, Category = "Dash|Time")
 	UCurveFloat* DashCurve = nullptr;
-	UPROPERTY(EditAnywhere, Category = "Dash")
-	float TimerRate = 0.05f;
+	UPROPERTY(EditAnywhere, Category = "Dash|Advanced")
+	float TimerRate = 0.001f;
 
 	UPROPERTY()
 	UShapeComponent* OwnerCollision = nullptr;
-
 	TMap<TEnumAsByte<ECollisionChannel>, TEnumAsByte<ECollisionResponse>> ActorResponses;
 	
 	FVector StartActorLocation;
