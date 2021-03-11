@@ -2,8 +2,3 @@
 
 
 #include "BaseDamageType.h"
-
-void UBaseDamageType::TakeDamage(float& VariableToTakeDamage, const float Damage)
-{
-	VariableToTakeDamage -= Damage;
-}

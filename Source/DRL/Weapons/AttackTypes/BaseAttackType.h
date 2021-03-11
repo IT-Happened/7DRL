@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
 #include "DRL/Weapons/Projectiles/BaseProjectile.h"
 #include "UObject/Object.h"
 #include "BaseAttackType.generated.h"
@@ -143,10 +142,13 @@ protected:
 
 
 private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Radius")
 	float AttackAngle = 120.f;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Radius")
 	float RadiusMultiplication = 1.f;
+
+	UPROPERTY(EditAnywhere, Category = "Radius")
+	float AngleOffset = 0.f;
 };
 
 UCLASS()
@@ -176,12 +178,12 @@ protected:
 	virtual void BP_UseAttack_Implementation() override;
 
 private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Radius")
 	float MinRadiusMultiplication = 0.75f;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Radius")
 	float MaxRadiusMultiplication = 1.5f;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Category = "Radius|Advanced")
 	FVector PointAttackRange = FVector(60.f, 60.f, 40.f);
 };
 
@@ -216,12 +218,12 @@ protected:
 	void AfterDash();
 
 private:
-	UPROPERTY(EditAnywhere, Category = "Dash|Distance")
+	UPROPERTY(EditAnywhere, Category = "Dash|Movement")
 	float DashDistanceMultiplication = 4.f;
-	UPROPERTY(EditAnywhere, Category = "Dash|Time")
+	UPROPERTY(EditAnywhere, Category = "Dash|Movement")
 	float DashTime = 0.3f;
 
-	UPROPERTY(EditAnywhere, Category = "Dash|Distance")
+	UPROPERTY(EditAnywhere, Category = "Dash|Movement")
 	TEnumAsByte<EDashDirection> DashDirection = DD_Forward;
 
 	UPROPERTY(EditAnywhere, Category = "Dash")
@@ -229,7 +231,7 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Dash")
 	TArray<TEnumAsByte<ECollisionChannel>> CollisionChannelsToIgnore;
 	
-	UPROPERTY(EditAnywhere, Category = "Dash|Time")
+	UPROPERTY(EditAnywhere, Category = "Dash|Movement")
 	UCurveFloat* DashCurve = nullptr;
 	UPROPERTY(EditAnywhere, Category = "Dash|Advanced")
 	float TimerRate = 0.001f;
