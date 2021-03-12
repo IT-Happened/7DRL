@@ -14,6 +14,9 @@
 void UBaseAttackType::BP_UseAttack_Implementation()
 {
 	if (!GetWorld()) return;
+
+	if(!Cast<APlayerController>(Cast<APawn>(GetWeaponOwner())->GetController())) return;
+	
 	RotateCharacterToMouseCursor();
 }
 
@@ -26,6 +29,14 @@ void UBaseAttackType::StartUseAttack(const float DelayTime)
 	}
 	else
 		BP_UseAttack();
+}
+
+void UBaseAttackType::AddEnemyToHit(AActor* Enemy)
+{
+	for (auto Tag : Enemy->Tags)
+		if (GetTagsToIgnore().Find(Tag) != INDEX_NONE) return;
+
+	HitEnemies.AddUnique(Enemy);
 }
 
 void UBaseAttackType::MakeDamage()
@@ -72,6 +83,11 @@ TMap<TSubclassOf<UBaseDamageType>, float> UBaseAttackType::GetDamage() const
 		Damage.Value *= AttackDamageMultiple;
 
 	return Damages;
+}
+
+TArray<FName> UBaseAttackType::GetTagsToIgnore() const
+{
+	return Cast<IWeaponInterface>(GetOwner())->Execute_GetTagsToIgnore(GetOwner());
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -126,6 +142,21 @@ void UPushbackAttack::DoWithHitEnemies(TArray<FHitResult> Hits)
 			if (Cast<APawn>(Hit.Actor))
 				Cast<ACharacter>(Hit.GetActor())->GetCharacterMovement()->AddImpulse(-Hit.ImpactNormal * PushBackPower);
 
+	ClearHitEnemies();
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+
+void UStunAttack::DoWithHitEnemies(TArray<FHitResult> Hits)
+{
+	for (auto Hit : Hits)
+		if (Hit.bBlockingHit)
+			if (Cast<APawn>(Hit.Actor))			
+				if(Hit.Actor->GetClass()->ImplementsInterface(UCharacterInterface::StaticClass()))
+					ICharacterInterface::Execute_StunCharacter(Hit.GetActor(), StunTime);
+
+	
 	ClearHitEnemies();
 }
 
@@ -255,7 +286,10 @@ void UDashAttack::BP_UseAttack_Implementation()
 	GetWorld()->GetTimerManager().SetTimer(DashTimer, this, &UDashAttack::Dash, TimerRate, true);
 
 	if (HiddenActorWhileDash)
+	{
+		GetOwner()->SetActorHiddenInGame(true);
 		GetWeaponOwner()->SetActorHiddenInGame(true);
+	}
 
 	OwnerCollision = Cast<UShapeComponent>(GetWeaponOwner()->GetComponentByClass(UShapeComponent::StaticClass()));
 	for (auto Channel : CollisionChannelsToIgnore)
@@ -282,7 +316,10 @@ void UDashAttack::Dash_Implementation()
 void UDashAttack::AfterDash_Implementation()
 {
 	if (HiddenActorWhileDash)
+	{
+		GetOwner()->SetActorHiddenInGame(false);
 		GetWeaponOwner()->SetActorHiddenInGame(false);
+	}
 
 	for (auto Response : ActorResponses)
 	{

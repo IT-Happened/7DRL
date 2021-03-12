@@ -6,128 +6,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fe1f868-9e25-4909-b8fd-23a7250ae7ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Action/Attack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AO/AI/Action/Attack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AO/AI/BT_AI_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AO/AI/BT_AI_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Cleare/ClearCodeAfterPatrol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AO/AI/Cleare/ClearCodeAfterPatrol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Experemental/TestAnaliseActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AO/AI/Experemental/TestAnaliseActor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AO/AI/PreAction/GetPatrolPoint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AO/AI/PreAction/GetPatrolPoint.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AO/Controllers/AI_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AO/Controllers/AI_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/AO/Pawns/AI/Simple/Simple.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AO/Pawns/AI/Simple/Simple.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_EnemyCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_EnemyCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BB_Test.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_EnemyCharacter.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BTTask_Attack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BT_Test.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Components/BP_HealthComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Components/BP_HealthComponent.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Components/BP_WeaponComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Components/BP_WeaponComponent.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_EnemyCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_EnemyCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Tamer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Tamer.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_BaseWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_LongSwordWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_LongSwordWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/DamageTypes/DT_Armor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/DamageTypes/DT_Armor.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_LongSwordWeapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_LongSwordWeapon_NPC.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_PistolWeapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_SpearWeapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_BaseBotWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_BaseBotWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Leader_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Leader_Bot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Tamer_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Tamer_Bot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Wolf_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Wolf_Bot.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/DamageTypes/DT_Health.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/DamageTypes/DT_Health.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/DamageTypes/DT_HealthPierceArmor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/DamageTypes/DT_HealthPierceArmor.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Projectiles/BP_SpearProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Projectiles/BP_SpearProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/BP_Sky_Sphere.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Floor_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Floor_02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Wall_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Wall_02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Wood_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Wood_02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_aMaster.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Columns/SM_Column_A_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Columns/SM_Column_B_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Doors/SM_Door_A_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Floors/SM_Floor_A_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_1x1_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_2x2_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_2x3_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_2x3_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_3x3_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_3x3_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Walls/SM_Wall_A_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Walls/SM_Wall_Door_A_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/L_AssetZoo.umap" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/AnimBP_KwangNoWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/AnimBP_KwangNoWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/AnimMontages/AnimMontage_DashEnd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/AnimMontages/AnimMontage_DashEnd.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/AnimMontages/AnimMontage_DashStart.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/AnimMontages/AnimMontage_DashStart.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/BlendSpaces/BS_SprintLoop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/BlendSpaces/BS_SprintLoop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/BlendSpaces/BS_SprintStart.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/BlendSpaces/BS_SprintStart.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/BlendSpaces/BS_SprintStop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/BlendSpaces/BS_SprintStop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Mesh/KwangWithoutSword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Mesh/KwangWithoutSword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimBP_KwangLongSword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimBP_KwangLongSword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_Attack1_LongSword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_Attack1_LongSword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_Attack2_LongSword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_Attack2_LongSword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_Attack3_LongSword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_Attack3_LongSword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_Attack4_LongSword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_Attack4_LongSword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/BlendSpaces/BS_JogLoop_Sword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/BlendSpaces/BS_JogLoop_Sword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/BlendSpaces/BS_JogStart_Sword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/BlendSpaces/BS_JogStart_Sword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/BlendSpaces/BS_JogStop_Sword.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/BlendSpaces/BS_JogStop_Sword.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/AnimBP_KwangPistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/AnimBP_KwangPistol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/AnimMontages/AnimMontage_Fire_Pistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/AnimMontages/AnimMontage_Fire_Pistol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/BlendSpaces/BS_JogLoop_Pistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/BlendSpaces/BS_JogLoop_Pistol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/BlendSpaces/BS_JogStart_Pistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/BlendSpaces/BS_JogStart_Pistol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/BlendSpaces/BS_JogStop_Pistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/BlendSpaces/BS_JogStop_Pistol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Fire_Fast_Var_A.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Fire_Fast_Var_A.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Idle_Pistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Idle_Pistol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Bwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Bwd.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Bwd_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Bwd_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Bwd_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Bwd_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Fwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Fwd.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Fwd_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Fwd_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Fwd_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Fwd_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Left.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Left_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Left_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Left_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Left_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Right.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Right.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Right_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Right_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Right_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/Sequinces/Jog_Right_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimBP_KwangSpear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimBP_KwangSpear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack1_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack1_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack2_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack2_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack3_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack3_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack4_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack4_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogLoop_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogLoop_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogStart_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogStart_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogStop_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogStop_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_SprintLoop_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_SprintLoop_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_SprintStart_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_SprintStart_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_SprintStop_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_SprintStop_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Dash_Attack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Dash_Attack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Dash_Pose.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Dash_Pose.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Fast_Attack_Var_A.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Fast_Attack_Var_A.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Idle_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Idle_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Left.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Left_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Left_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Left_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Left_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Right.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Right.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Right_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Right_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Right_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Right_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Melee_A_Med.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Melee_A_Med.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Melee_C_Med.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Melee_C_Med.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Bwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Bwd.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Bwd_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Bwd_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Bwd_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Bwd_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Fwd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Fwd.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Fwd_Start.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Fwd_Start.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Fwd_Stop.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Fwd_Stop.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Idle.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Idle.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Left.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Left.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Right.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Sprint_Right.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Ultimate.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Ultimate.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Mesh/Kwang_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Mesh/Kwang_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_PlayerHealths.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/DamageType/BaseDamageType.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/DamageType/BaseDamageType.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +41,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Core/Public/UObject/WeakObjectPtrTemplates.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/UE_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/UE_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/Object.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Classes/Engine/EngineTypes.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Source/DRL/Components/HealthComponent.h" />
       <option value="$PROJECT_DIR$/Source/DRL/Components/HealthComponent.cpp" />
-      <option value="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.h" />
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/DamageType/BaseDamageType.cpp" />
-      <option value="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" />
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/DamageType/BaseDamageType.h" />
+      <option value="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.h" />
+      <option value="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pbd1REZjdk5cXNxgk3XTDAHKoR" />
@@ -380,6 +298,8 @@
       <option name="presentableId" value="Default" />
       <updated>1615455511756</updated>
       <workItem from="1615455516406" duration="5496000" />
+      <workItem from="1615546338731" duration="437000" />
+      <workItem from="1615546802075" duration="2815000" />
     </task>
     <servers />
   </component>
@@ -393,6 +313,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

@@ -38,12 +38,34 @@ class IWeaponInterface
 public:
 	UFUNCTION(BlueprintImplementableEvent)
 	TMap<TSubclassOf<UBaseDamageType>, float> GetWeaponDamage();
+	
+	UFUNCTION(BlueprintImplementableEvent)
+	TArray<FName> GetTagsToIgnore();
 
 	UFUNCTION(BlueprintImplementableEvent)
 	float GetWeaponDistance();
 
 	UFUNCTION(BlueprintImplementableEvent)
 	bool IsDrawDebug();
+};
+
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+
+UINTERFACE()
+class UCharacterInterface : public UInterface
+{
+	GENERATED_BODY()
+};
+class ICharacterInterface
+{
+	GENERATED_BODY()
+
+public:
+	UFUNCTION(BlueprintImplementableEvent)
+	void StunCharacter(float StunTime);
+	
 };
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -66,7 +88,7 @@ protected:
     void BP_UseAttack();
 	
 	UFUNCTION(BlueprintCallable)
-	void AddEnemyToHit(AActor* Enemy) {HitEnemies.AddUnique(Enemy);}
+	void AddEnemyToHit(AActor* Enemy);
 	UFUNCTION(BlueprintCallable)
 	void MakeDamage();
 	UFUNCTION(BlueprintCallable)
@@ -87,6 +109,7 @@ protected:
 	
 private:
 	TMap<TSubclassOf<UBaseDamageType>, float> GetDamage() const;
+	TArray<FName> GetTagsToIgnore() const;
 
 	UPROPERTY(EditAnywhere, Category = "Attack")
 	float AttackDamageMultiple = 1.f;
@@ -162,6 +185,21 @@ protected:
 private:
 	UPROPERTY(EditAnywhere, Category = "PushBack")
 	float PushBackPower = 40000.f;
+	
+};
+
+
+UCLASS()
+class UStunAttack: public UCircularAttack
+{
+	GENERATED_BODY()
+
+protected:
+	virtual void DoWithHitEnemies(TArray<FHitResult> Hits) override;
+
+private:
+	UPROPERTY(EditAnywhere, Category = "PushBack")
+	float StunTime = 0.4f;
 	
 };
 
