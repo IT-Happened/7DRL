@@ -68,7 +68,8 @@ void UPushAction::DoActionWithActors(TSet<AActor*> Actors)
 				break;
 			}
 
-			DrawDebugLine(GetWorld(), Actor->GetActorLocation(), DirectionVector* PushBackPower, FColor::Red, false, 2.f, -1, 3.f);
+			if(Cast<IWeaponInterface>(GetOwner())->IsDrawDebug())
+				DrawDebugLine(GetWorld(), Actor->GetActorLocation(), DirectionVector* PushBackPower, FColor::Red, false, 2.f, -1, 3.f);
 
 			Character->GetCharacterMovement()->AddImpulse(DirectionVector * PushBackPower, true);
 		}

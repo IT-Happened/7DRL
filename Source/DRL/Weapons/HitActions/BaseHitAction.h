@@ -8,7 +8,6 @@
 
 class UBaseDamageType;
 
-
 UCLASS(Abstract, EditInlineNew, Blueprintable)
 class DRL_API UBaseHitAction : public UObject
 {
@@ -28,6 +27,23 @@ protected:
 	UFUNCTION(BlueprintCallable)
     AActor* GetWeaponOwner() const {return GetOwner()->GetOwner();}
 };
+
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+
+USTRUCT(BlueprintType)
+struct FHitAction
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, Category = "Hit")
+	float HitActionChance = 1.f;
+
+	UPROPERTY(EditAnywhere, Instanced, Category = "Hit")
+	UBaseHitAction* HitAction = nullptr;
+};
+
 
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------

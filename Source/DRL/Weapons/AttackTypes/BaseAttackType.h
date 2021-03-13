@@ -100,8 +100,11 @@ protected:
 private:
 	TArray<FName> GetTagsToIgnore() const;	
 
-	UPROPERTY(EditAnywhere, Instanced, Category = "Hit")
-	TSet<UBaseHitAction*> HitActions = {};
+	UPROPERTY(EditAnywhere, Category = "Hit")
+	TArray<FHitAction> HitActions = {};
+
+	UPROPERTY(EditAnywhere, Category = "Advanced")
+	bool bRotateCharacterOnAttack = true;
 
 	UPROPERTY()
 	TMap<AActor*, bool> HitActors = {};
