@@ -50,7 +50,7 @@ void ABaseProjectile::BeginPlay()
 	BoxCollision->OnComponentHit.AddDynamic(this, &ABaseProjectile::OnProjectileHit);
 	BoxCollision->OnComponentBeginOverlap.AddDynamic(this, &ABaseProjectile::OnProjectileBeginOverlap);
 
-	SetLifeSpan(5.f);
+	SetLifeSpan(2.f);
 }
 
 void ABaseProjectile::OnProjectileHit(UPrimitiveComponent* HitComponent, AActor* OtherActor,

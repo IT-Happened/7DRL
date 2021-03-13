@@ -7,9 +7,104 @@
   <component name="ChangeListManager">
     <list default="true" id="1fe1f868-9e25-4909-b8fd-23a7250ae7ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Abilities/BP_Ability.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Abilities/BP_Ability.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Action/Attack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Action/MoveTo_2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Action/WaitTime.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/BD_AI_1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/BT_AI_1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Cleare/ClearAfterGoToPoint.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Cleare/ClearCodeAfterPatrol.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Cleare/SetAction.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Enumerators/E_AIActions.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Experemental/ClearAfterPrediction.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Experemental/GetNextPrediction.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Experemental/PredictionTask.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Experemental/TestAnaliseActor.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Other/CustToAI.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Other/InitTask.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Other/PlayAnimMontage.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/PatrolActors.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/PreAction/GetPatrolPoint.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/PreAction/GetRandomLocaltionToFindPlayer.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/PreAction/SetFindLocaltion.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Structures/S_ForCorrentActor.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/AI/Structures/S_PredictionActor.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Controllers/AI_1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPersonIdle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPersonJump_End.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPersonJump_Loop.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPersonJump_Loop_Montage.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPersonJump_Start.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPersonRun.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPersonWalk.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPerson_AnimBP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Animations/ThirdPerson_IdleRun_2D.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/M_UE4Man_Body.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/M_UE4Man_ChestLogo.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/MaterialLayers/ML_Plastic_Shiny_Beige_LOGO.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/MaterialLayers/ML_SoftMetal_UE4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/MaterialLayers/T_ML_Aluminum01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/MaterialLayers/T_ML_Aluminum01_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Mesh/SK_Mannequin.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Mesh/SK_Mannequin_Skeleton.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Textures/T_UE4_Mannequin_Mobile_M.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Textures/T_UE4_Mannequin_Mobile_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Textures/UE4Man_Logo_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/DEBUGOnly/Mannequin/Character/Textures/UE4_LOGO_CARD.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MI_Female_Body.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/M_Male_Body.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/M_UE4Man_ChestLogo.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MaterialLayers/ML_Plastic_Shiny_Beige_LOGO.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MaterialLayers/ML_SoftMetal_UE4.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MaterialLayers/T_ML_Aluminum01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MaterialLayers/T_ML_Aluminum01_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/SK_Mannequin.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/SK_Mannequin_Female.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/SK_Mannequin_Female_PhysicsAsset.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/SK_Mannequin_PhysicsAsset.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Textures/T_Female_Mask.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Textures/T_Female_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Textures/T_Male_Mask.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Textures/T_Male_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Textures/T_UE4Logo_Mask.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/Textures/T_UE4Logo_N.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/SkeletalMeshes/Character/Mesh/UE4_Mannequin_Skeleton.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/StaticMeshes/Enviroment/1M_Cube.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/StaticMeshes/Enviroment/1M_Cube_Chamfer.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/StaticMeshes/Enviroment/Materials/CubeMaterial.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/StaticMeshes/Enviroment/Ramp_Mesh.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Meshes/StaticMeshes/Enviroment/TemplateFloor.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Pawns/AI/Simple/Simple.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Pawns/AI/_AI.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AO/Pawns/_Character.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BB_Test.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BTTask_Attack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/AI/BT_Test.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_EnemyCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_EnemyCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Leader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Leader.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Tamer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Tamer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Wolf.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Wolf.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_BaseWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Leader_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Leader_Bot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Tamer_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Tamer_Bot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Wolf_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Wolf_Bot.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_SpearWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_SpearWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/HitActions/BaseHitAction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/HitActions/BaseHitAction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/TestMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Tamer/Animations/Countess_AnimBlueprint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Tamer/Animations/Countess_AnimBlueprint.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/AnimBP_Wolf.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/AnimBP_Wolf.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/BlendSpaces/BS_WolfLocomotion.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Sleep.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Sleep.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DRL.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/DRL.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/DRL/DRL.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/DRL.Build.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +129,7 @@
     <setting file="file://D:/UE_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Classes/Kismet/KismetMathLibrary.inl" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/UE_4.26/Engine/Source/Runtime/CoreUObject/Public/UObject/Object.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Private/DrawDebugHelpers.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Core/Public/Containers/Map.h" root0="FORCE_HIGHLIGHTING" />
@@ -57,6 +153,15 @@
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" />
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/HitActions/BaseHitAction.cpp" />
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" />
+      <option value="$PROJECT_DIR$/Source/DRL/DRL.Build.cs" />
+      <option value="$PROJECT_DIR$/Source/DRL/AI/DRLAIPerceptionComponent.h" />
+      <option value="$PROJECT_DIR$/Source/DRL/AI/Services/BTService_FindEnemy.h" />
+      <option value="$PROJECT_DIR$/Source/DRL/AI/Services/BTService_FindEnemy.cpp" />
+      <option value="$PROJECT_DIR$/Source/DRL/AI/DRLAIController.h" />
+      <option value="$PROJECT_DIR$/Source/DRL/AI/DRLAIController.cpp" />
+      <option value="$PROJECT_DIR$/Source/DRL/AI/Tasks/BTTask_NextLocation.h" />
+      <option value="$PROJECT_DIR$/Source/DRL/AI/Tasks/BTTask_NextLocation.cpp" />
+      <option value="$PROJECT_DIR$/Source/DRL/AI/DRLAIPerceptionComponent.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pbd1REZjdk5cXNxgk3XTDAHKoR" />
@@ -296,6 +401,7 @@
       <workItem from="1615546802075" duration="5317000" />
       <workItem from="1615605625059" duration="4264000" />
       <workItem from="1615609967561" duration="15182000" />
+      <workItem from="1615635271056" duration="7411000" />
     </task>
     <servers />
   </component>
