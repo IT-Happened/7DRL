@@ -60,6 +60,7 @@ Content/ParagonPhase/
 Content/ParagonCountess/
 Content/BossyEnemy/
 Content/MedievalDungeon
+Content/Particles_Wind_Control_System/
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
 Build/*/**
