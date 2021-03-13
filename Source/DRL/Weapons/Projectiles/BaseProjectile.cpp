@@ -71,8 +71,6 @@ void ABaseProjectile::DestroyProjectile()
 
 void ABaseProjectile::Destroyed()
 {
-	UE_LOG(LogTemp, Display, TEXT("Projectile Destroyed"));
-	
 	if(!AttackRef) return;
 	AttackRef->EmptyHitActors();
 }
