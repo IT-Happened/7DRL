@@ -102,9 +102,9 @@ private:
 
 	UPROPERTY(EditAnywhere, Instanced, Category = "Hit")
 	TSet<UBaseHitAction*> HitActions = {};
-	
+
 	UPROPERTY()
-	TSet<AActor*> HitActors;
+	TMap<AActor*, bool> HitActors = {};
 };
 
 //----------------------------------------------------------------------------------------------------------------------

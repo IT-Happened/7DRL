@@ -2,6 +2,8 @@
 
 
 #include "BaseHitAction.h"
+
+#include "DrawDebugHelpers.h"
 #include "DRL/Weapons/AttackTypes/BaseAttackType.h"
 #include "DRL/Weapons/DamageType/BaseDamageType.h"
 #include "GameFramework/Character.h"
@@ -52,6 +54,7 @@ void UPushAction::DoActionWithActors(TSet<AActor*> Actors)
 
 			const FRotator ThrowRotation = UKismetMathLibrary::FindLookAtRotation(OwnerLocation, ActorLocation);
 			FVector DirectionVector;
+			
 			switch(PushDirection)
 			{
 			case PD_From:
@@ -64,6 +67,8 @@ void UPushAction::DoActionWithActors(TSet<AActor*> Actors)
 				DirectionVector = ThrowRotation.Vector();
 				break;
 			}
+
+			DrawDebugLine(GetWorld(), Actor->GetActorLocation(), DirectionVector* PushBackPower, FColor::Red, false, 2.f, -1, 3.f);
 
 			Character->GetCharacterMovement()->AddImpulse(DirectionVector * PushBackPower, true);
 		}

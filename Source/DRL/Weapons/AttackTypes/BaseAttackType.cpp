@@ -41,13 +41,25 @@ void UBaseAttackType::AddActorToHit(AActor* Actor)
 	for (auto Tag : Actor->Tags)
 		if (GetTagsToIgnore().Find(Tag) != INDEX_NONE) return;
 
-	HitActors.Add(Actor);
+	const TTuple<AActor*, bool> HitActor(Actor, false);
+
+	if(HitActors.Contains(Actor)) return;
+	
+	HitActors.Add(HitActor);
 }
 
 void UBaseAttackType::DoHitAction()
 {
+	TSet<AActor*> ActorsToHit = {};
+	for(auto& HitActor : HitActors)
+		if(!HitActor.Value)
+		{
+			ActorsToHit.Add(HitActor.Key);
+			HitActor.Value = true;
+		}
+	
 	for(auto HitAction : HitActions)
-		HitAction->DoActionWithActors(HitActors);
+		HitAction->DoActionWithActors(ActorsToHit);
 }
 
 void UBaseAttackType::EmptyHitActors()
@@ -282,8 +294,11 @@ void UDashAttack::Dash_Implementation()
 		for (auto Hit : TraceResults)
 		{
 			if (Hit.bBlockingHit)
-				AddActorToHit(Hit.GetActor());
+				if(Cast<APawn>(Hit.Actor))
+					AddActorToHit(Hit.GetActor());
 		}
+
+		DoHitAction();
 	}
 
 	if (TimePassed >= DashTime)
@@ -295,7 +310,6 @@ void UDashAttack::Dash_Implementation()
 
 void UDashAttack::AfterDash_Implementation()
 {
-	DoHitAction();
 	EmptyHitActors();
 	
 	if (HiddenActorWhileDash)
