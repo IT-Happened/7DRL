@@ -59,7 +59,7 @@ Content/ParagonSerath/
 Content/ParagonPhase/
 Content/ParagonCountess/
 Content/BossyEnemy/
-
+Content/MedievalDungeon
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
 Build/*/**
