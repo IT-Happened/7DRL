@@ -6,10 +6,7 @@
 #include "Components/ShapeComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
-#include <DRL/Weapons/DamageType/BaseDamageType.h>
-
 #include "GameFramework/Character.h"
-#include "GameFramework/CharacterMovementComponent.h"
 
 void UBaseAttackType::BP_UseAttack_Implementation()
 {
@@ -18,6 +15,14 @@ void UBaseAttackType::BP_UseAttack_Implementation()
 	if(!Cast<APlayerController>(Cast<APawn>(GetWeaponOwner())->GetController())) return;
 	
 	RotateCharacterToMouseCursor();
+}
+
+void UBaseAttackType::Initialize(AActor* Owner)
+{
+	Rename(nullptr, Owner);
+
+	for(auto HitAction : HitActions)
+		HitAction->Initialize(GetOwner());
 }
 
 void UBaseAttackType::StartUseAttack(const float DelayTime)
@@ -31,23 +36,23 @@ void UBaseAttackType::StartUseAttack(const float DelayTime)
 		BP_UseAttack();
 }
 
-void UBaseAttackType::AddEnemyToHit(AActor* Enemy)
+void UBaseAttackType::AddActorToHit(AActor* Actor)
 {
-	for (auto Tag : Enemy->Tags)
+	for (auto Tag : Actor->Tags)
 		if (GetTagsToIgnore().Find(Tag) != INDEX_NONE) return;
 
-	HitEnemies.AddUnique(Enemy);
+	HitActors.Add(Actor);
 }
 
-void UBaseAttackType::MakeDamage()
+void UBaseAttackType::DoHitAction()
 {
-	for (auto Damage : GetDamage())
-	{
-		for (auto HitEnemy : HitEnemies)
-			UGameplayStatics::ApplyDamage(HitEnemy, Damage.Value, Cast<APawn>(GetWeaponOwner())->GetController(),
-			                              GetWeaponOwner(), Damage.Key);
-	}
-	HitEnemies.Empty();
+	for(auto HitAction : HitActions)
+		HitAction->DoActionWithActors(HitActors);
+}
+
+void UBaseAttackType::EmptyHitActors()
+{
+	HitActors.Empty();
 }
 
 void UBaseAttackType::RotateCharacterToMouseCursor() const
@@ -75,16 +80,6 @@ float UBaseAttackType::GetWeaponDistance() const
 	return Cast<IWeaponInterface>(GetOwner())->Execute_GetWeaponDistance(GetOwner());
 }
 
-TMap<TSubclassOf<UBaseDamageType>, float> UBaseAttackType::GetDamage() const
-{
-	TMap<TSubclassOf<UBaseDamageType>, float> Damages = Cast<IWeaponInterface>(GetOwner())->
-		Execute_GetWeaponDamage(GetOwner());
-	for (auto& Damage : Damages)
-		Damage.Value *= AttackDamageMultiple;
-
-	return Damages;
-}
-
 TArray<FName> UBaseAttackType::GetTagsToIgnore() const
 {
 	return Cast<IWeaponInterface>(GetOwner())->Execute_GetTagsToIgnore(GetOwner());
@@ -97,11 +92,11 @@ void UCircularAttack::BP_UseAttack_Implementation()
 {
 	Super::BP_UseAttack_Implementation();
 
-	const float StartAngle = GetWeaponOwner()->GetActorRotation().Yaw + AngleOffset - AttackAngle / 2;
+	const float StartAngle = GetWeaponOwner()->GetActorRotation().Yaw + AngleOffset - Angle / 2;
 
 	TArray<FHitResult> AllHits;
 
-	for (int i = 0; i < AttackAngle; i++)
+	for (int i = 0; i < Angle; i++)
 	{
 		TArray<FHitResult> OutHits;
 		FRotator Rotation(0.f, StartAngle + i, 0.f);
@@ -112,54 +107,20 @@ void UCircularAttack::BP_UseAttack_Implementation()
 		FCollisionQueryParams CollisionQueryParams;
 		CollisionQueryParams.AddIgnoredActors(TArray<AActor*>({GetOwner(), GetWeaponOwner()}));
 
-		GetWorld()->LineTraceMultiByChannel(OutHits, StartLocation, EndLocation, ECC_Visibility, CollisionQueryParams);
-		if (IsDrawDebug())
-			DrawDebugLine(GetWorld(), StartLocation, EndLocation, FColor::Cyan, false, 3.f, -1, 1.5f);
+		UKismetSystemLibrary::LineTraceMulti(GetWorld(), StartLocation, EndLocation,
+                                              TraceTypeQuery1, true, TArray<AActor*>{GetOwner(), GetWeaponOwner()},
+                                              IsDrawDebug() ? EDrawDebugTrace::ForDuration : EDrawDebugTrace::None,
+                                              OutHits, true);
 
-		AllHits.Append(OutHits);
+		for(auto Hit : OutHits)
+			if(Hit.bBlockingHit)
+				if(Cast<APawn>(Hit.Actor))
+					AddActorToHit(Hit.GetActor());
 	}
 
-	DoWithHitEnemies(AllHits);
+	DoHitAction();
+	EmptyHitActors();
 }
-
-void UCircularAttack::DoWithHitEnemies(TArray<FHitResult> Hits)
-{
-	for (auto Hit : Hits)
-		if (Hit.bBlockingHit)
-			if (Cast<APawn>(Hit.Actor))
-				AddEnemyToHit(Hit.GetActor());
-
-	MakeDamage();
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------------------
-
-void UPushbackAttack::DoWithHitEnemies(TArray<FHitResult> Hits)
-{
-	for (auto Hit : Hits)
-		if (Hit.bBlockingHit)
-			if (Cast<APawn>(Hit.Actor))
-				Cast<ACharacter>(Hit.GetActor())->GetCharacterMovement()->AddImpulse(-Hit.ImpactNormal * PushBackPower);
-
-	ClearHitEnemies();
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------------------
-
-void UStunAttack::DoWithHitEnemies(TArray<FHitResult> Hits)
-{
-	for (auto Hit : Hits)
-		if (Hit.bBlockingHit)
-			if (Cast<APawn>(Hit.Actor))			
-				if(Hit.Actor->GetClass()->ImplementsInterface(UCharacterInterface::StaticClass()))
-					ICharacterInterface::Execute_StunCharacter(Hit.GetActor(), StunTime);
-
-	
-	ClearHitEnemies();
-}
-
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -215,7 +176,7 @@ void UPierceAttack::BP_UseAttack_Implementation()
 			if (LineHit.bBlockingHit)
 				if (Cast<APawn>(LineHit.Actor))
 				{
-					AddEnemyToHit(LineHit.GetActor());
+					AddActorToHit(LineHit.GetActor());
 					break;
 				}
 		}
@@ -228,10 +189,11 @@ void UPierceAttack::BP_UseAttack_Implementation()
 		                                      LineHit, true);
 		if (LineHit.bBlockingHit)
 			if (Cast<APawn>(LineHit.Actor))
-				AddEnemyToHit(LineHit.GetActor());
+				AddActorToHit(LineHit.GetActor());
 	}
 
-	MakeDamage();
+	DoHitAction();
+	EmptyHitActors();
 }
 
 
@@ -305,16 +267,37 @@ void UDashAttack::Dash_Implementation()
 
 	GetWeaponOwner()->SetActorLocation(
 		FMath::Lerp(StartActorLocation, EndActorLocation, DashCurve->GetFloatValue(TimePassed)), true);
+		
+	if(bHitEnemiesOnDash)
+	{
+		TArray<FHitResult> TraceResults;
+
+		UKismetSystemLibrary::SphereTraceMulti(GetWorld(), GetWeaponOwner()->GetActorLocation(),
+                                               GetWeaponOwner()->GetActorLocation(),
+                                               GetWeaponDistance() * DashHitRadiusMultiplication, TraceTypeQuery1,
+                                               false, TArray<AActor*>{GetOwner(), GetWeaponOwner()},
+                                               IsDrawDebug() ? EDrawDebugTrace::ForDuration : EDrawDebugTrace::None,
+                                               TraceResults, true);
+
+		for (auto Hit : TraceResults)
+		{
+			if (Hit.bBlockingHit)
+				AddActorToHit(Hit.GetActor());
+		}
+	}
 
 	if (TimePassed >= DashTime)
 	{
-		GetWorld()->GetTimerManager().ClearTimer(DashTimer);
+		GetWorld()->GetTimerManager().ClearTimer(DashTimer);	
 		AfterDash();
 	}
 }
 
 void UDashAttack::AfterDash_Implementation()
 {
+	DoHitAction();
+	EmptyHitActors();
+	
 	if (HiddenActorWhileDash)
 	{
 		GetOwner()->SetActorHiddenInGame(false);
@@ -325,43 +308,6 @@ void UDashAttack::AfterDash_Implementation()
 	{
 		OwnerCollision->SetCollisionResponseToChannel(Response.Key, Response.Value);
 	}
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------------------
-void USwordDashAttack::Dash_Implementation()
-{
-	Super::Dash_Implementation();
-
-	TArray<FHitResult> TraceResults;
-
-	UKismetSystemLibrary::SphereTraceMulti(GetWorld(), GetWeaponOwner()->GetActorLocation(),
-	                                       GetWeaponOwner()->GetActorLocation(),
-	                                       GetWeaponDistance() * DashAttackRadiusMultiplication, TraceTypeQuery1,
-	                                       false, TArray<AActor*>{GetOwner(), GetWeaponOwner()},
-	                                       IsDrawDebug() ? EDrawDebugTrace::ForDuration : EDrawDebugTrace::None,
-	                                       TraceResults, true);
-
-	for (auto Hit : TraceResults)
-	{
-		if (Hit.bBlockingHit)
-			AddEnemyToHit(Hit.GetActor());
-	}
-}
-
-void USwordDashAttack::AfterDash_Implementation()
-{
-	Super::AfterDash_Implementation();
-
-	MakeDamage();
-}
-
-//----------------------------------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------------------
-
-void USpearDashAttack::Dash_Implementation()
-{
-	Super::Dash_Implementation();
 }
 
 //----------------------------------------------------------------------------------------------------------------------

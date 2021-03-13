@@ -3,24 +3,13 @@
 #pragma once
 
 #include "CoreMinimal.h"
+
+#include "DRL/Weapons/HitActions/BaseHitAction.h"
 #include "DRL/Weapons/Projectiles/BaseProjectile.h"
 #include "UObject/Object.h"
 #include "BaseAttackType.generated.h"
 
 class UBaseDamageType;
-
-//----------------------------------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------------------
-//----------------------------------------------------------------------------------------------------------------------
-
-UENUM(BlueprintType)
-enum EAttackTypes
-{
-	AT_BaseAttack UMETA(DisplayName="Base Attack"),
-	AT_SpaceBar UMETA(DisplayName = "SpaceBar"),
-
-	AT_MAX,
-};
 
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------
@@ -80,19 +69,20 @@ class DRL_API UBaseAttackType : public UObject
 public:
 	UFUNCTION(BlueprintCallable)
 	void StartUseAttack(float DelayTime = 0.f);
-	
 
+	UFUNCTION(BlueprintCallable)
+	void Initialize(AActor* Owner);
 
 protected:
 	UFUNCTION(BlueprintNativeEvent, meta = (DisplayName = "UseAttack"))
     void BP_UseAttack();
 	
 	UFUNCTION(BlueprintCallable)
-	void AddEnemyToHit(AActor* Enemy);
+	void AddActorToHit(AActor* Actor);
 	UFUNCTION(BlueprintCallable)
-	void MakeDamage();
+	void DoHitAction();
 	UFUNCTION(BlueprintCallable)
-	void ClearHitEnemies() {HitEnemies.Empty();}
+    void EmptyHitActors();
 	
 	UFUNCTION(BlueprintCallable)
 	void RotateCharacterToMouseCursor() const;
@@ -108,14 +98,13 @@ protected:
 	float GetWeaponDistance() const;
 	
 private:
-	TMap<TSubclassOf<UBaseDamageType>, float> GetDamage() const;
-	TArray<FName> GetTagsToIgnore() const;
+	TArray<FName> GetTagsToIgnore() const;	
 
-	UPROPERTY(EditAnywhere, Category = "Attack")
-	float AttackDamageMultiple = 1.f;
+	UPROPERTY(EditAnywhere, Instanced, Category = "Hit")
+	TSet<UBaseHitAction*> HitActions = {};
 	
 	UPROPERTY()
-	TArray<AActor*> HitEnemies;
+	TSet<AActor*> HitActors;
 };
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -133,7 +122,6 @@ struct FAttack
 	UPROPERTY(EditAnywhere, Instanced, BlueprintReadOnly, Category = "Attack")
 	UBaseAttackType* Attacks = {};
 };
-
 USTRUCT(BlueprintType)
 struct FComboAttack
 {
@@ -158,55 +146,24 @@ UCLASS()
 class UCircularAttack : public UBaseAttackType
 {
 	GENERATED_BODY()
+
 protected:
 	virtual void BP_UseAttack_Implementation() override;
-
-	virtual void DoWithHitEnemies(TArray<FHitResult> Hits);
-
+	
 
 private:
-	UPROPERTY(EditAnywhere, Category = "Radius")
-	float AttackAngle = 120.f;
-	UPROPERTY(EditAnywhere, Category = "Radius")
+	UPROPERTY(EditAnywhere, Category = "Hit")
+	float Angle = 120.f;
+	UPROPERTY(EditAnywhere, Category = "Hit")
 	float RadiusMultiplication = 1.f;
 
-	UPROPERTY(EditAnywhere, Category = "Radius")
+	UPROPERTY(EditAnywhere, Category = "Hit")
 	float AngleOffset = 0.f;
 };
 
-UCLASS()
-class UPushbackAttack: public UCircularAttack
-{
-	GENERATED_BODY()
-
-protected:
-	virtual void DoWithHitEnemies(TArray<FHitResult> Hits) override;
-
-private:
-	UPROPERTY(EditAnywhere, Category = "PushBack")
-	float PushBackPower = 40000.f;
-	
-};
-
-
-UCLASS()
-class UStunAttack: public UCircularAttack
-{
-	GENERATED_BODY()
-
-protected:
-	virtual void DoWithHitEnemies(TArray<FHitResult> Hits) override;
-
-private:
-	UPROPERTY(EditAnywhere, Category = "PushBack")
-	float StunTime = 0.4f;
-	
-};
-
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------
-
 
 UCLASS()
 class UPierceAttack : public UBaseAttackType
@@ -216,12 +173,12 @@ protected:
 	virtual void BP_UseAttack_Implementation() override;
 
 private:
-	UPROPERTY(EditAnywhere, Category = "Radius")
+	UPROPERTY(EditAnywhere, Category = "Hit")
 	float MinRadiusMultiplication = 0.75f;
-	UPROPERTY(EditAnywhere, Category = "Radius")
+	UPROPERTY(EditAnywhere, Category = "Hit")
 	float MaxRadiusMultiplication = 1.5f;
 
-	UPROPERTY(EditAnywhere, Category = "Radius|Advanced")
+	UPROPERTY(EditAnywhere, Category = "Hit|Advanced")
 	FVector PointAttackRange = FVector(60.f, 60.f, 40.f);
 };
 
@@ -240,7 +197,6 @@ enum EDashDirection
 
 	DD_MAX,
 };
-
 UCLASS()
 class UDashAttack : public UBaseAttackType
 {
@@ -260,6 +216,12 @@ private:
 	float DashDistanceMultiplication = 4.f;
 	UPROPERTY(EditAnywhere, Category = "Dash|Movement")
 	float DashTime = 0.3f;
+
+	UPROPERTY(EditAnywhere, Category = "Hit")
+	bool bHitEnemiesOnDash = false;
+	
+	UPROPERTY(EditAnywhere, Category = "Hit")
+	float DashHitRadiusMultiplication = 0.25f;
 
 	UPROPERTY(EditAnywhere, Category = "Dash|Movement")
 	TEnumAsByte<EDashDirection> DashDirection = DD_Forward;
@@ -282,29 +244,6 @@ private:
 	FVector EndActorLocation;
 	float TimePassed = 0.f;
 	FTimerHandle DashTimer;
-};
-UCLASS()
-class USwordDashAttack : public UDashAttack
-{
-	GENERATED_BODY()
-
-protected:
-	virtual void Dash_Implementation() override;
-
-	virtual void AfterDash_Implementation() override;
-
-private:
-	UPROPERTY(EditAnywhere, Category = "Attack")
-	float DashAttackRadiusMultiplication = 0.25f;
-};
-
-UCLASS()
-class USpearDashAttack : public UDashAttack
-{
-	GENERATED_BODY()
-
-protected:
-	virtual void Dash_Implementation() override;
 };
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -332,7 +271,6 @@ private:
 	UPROPERTY(EditAnywhere, Category = "Projectile|Advanced")
 	float SpawnForwardOffset = 0.f;
 };
-
 
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------

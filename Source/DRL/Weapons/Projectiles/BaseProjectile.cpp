@@ -69,10 +69,21 @@ void ABaseProjectile::DestroyProjectile()
 	Destroy();
 }
 
+void ABaseProjectile::Destroyed()
+{
+	UE_LOG(LogTemp, Display, TEXT("Projectile Destroyed"));
+	
+	if(!AttackRef) return;
+	AttackRef->EmptyHitActors();
+}
+
+
 void ABaseProjectile::OnProjectileBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
                                                UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep,
                                                const FHitResult& SweepResult)
 {
-	AttackRef->AddEnemyToHit(OtherActor);
-	AttackRef->MakeDamage();
+	if(!AttackRef) return;
+	
+	AttackRef->AddActorToHit(OtherActor);
+	AttackRef->DoHitAction();
 }
