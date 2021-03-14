@@ -52,6 +52,23 @@ Plugins/*/Binaries/*
 # Builds
 Build/*
 
+Content/ParagonFengMao/
+Content/ParagonKwang/
+Content/ParagonRevenant/
+Content/ParagonSerath/
+Content/ParagonPhase/
+Content/ParagonCountess/
+Content/BossyEnemy/
+Content/MedievalDungeon
+Content/Particles_Wind_Control_System/
+Content/WaterPlane
+
+Content/AdvancedMagicFX12/
+Content/AdvancedMagicFX13/
+Content/FXVarietyPAck/
+Content/Hack_And_Slash_FX/
+Content/TrailPack/
+
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
 !Build/*/
 Build/*/**
