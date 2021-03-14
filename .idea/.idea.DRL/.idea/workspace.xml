@@ -6,246 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="041cf289-4171-4a66-8683-2213b76dacea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Abilities/Curve_Dash_WolfClaw.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Components/BP_HealthComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Components/BP_HealthComponent.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_EnemyCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_EnemyCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Leader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Leader.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Tamer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Tamer.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Wolf.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Wolf.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Level/BP_SceneGenerator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Level/BP_SceneGenerator.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_BaseWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_LongSwordWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_LongSwordWeapon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_PistolWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_PistolWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/Boss_Idle.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/Boss_ReactionHit_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/Boss_ReactionHit_F.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/Boss_ReactionHit_L.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/Boss_ReactionHit_R.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/Boss_ReactionHits_unedited.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Attacks/Boss_Attack_ChargedCombo_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Attacks/Boss_Attack_HandAndSwordSwing_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Attacks/Boss_Attack_Running_Simple_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Attacks/Boss_Attack_Running_WithAOEBlow_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Attacks/Boss_Attack_SwingAndSlam_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Attacks/Boss_Attack_Swing_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Attacks/Boss_Attack_Uppercut_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Boss_BattleEntrance_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Boss_Parried_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Boss_Staggered_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Movement/Boss_Run_F_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Movement/Boss_Walk_B_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Movement/Boss_Walk_F_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Movement/Boss_Walk_L_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BossyEnemy/Animations/InPlace/Movement/Boss_Walk_R_InP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Materials/M_Wood_03.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Columns/SM_Column_A_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Columns/SM_Column_B_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Props/SM_Table_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Props/SM_Vase_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_2x2_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_2x3_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_2x3_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_2x3_C.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_2x3_D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_3x3_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_3x3_B.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_3x3_C.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_3x3_D.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Rooms/SM_Room_5x5_A.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Environment/Meshes/Walls/SM_Wall_A_01.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_SpearWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_SpearWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Projectiles/BP_SpearProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Projectiles/BP_SpearProjectile.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestDungeonGenerator.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestDungeonGenerator.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Tamer/Mesh/PA_Countess_Shogun_Physics.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Warrior/warrior_animated-armed_Anim.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/AnimMontages/AnimMontage_Bite_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Bite.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Death.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_GetHitFront.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_GetHitLeft.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_GetHitRight.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_GoToRest.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Howl.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_IdleAggressive.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_IdleLookAround.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_JumpBite_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Rest.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_RestToGoBackUp.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_RunBite.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_RunBite_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_RunTurnL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_RunTurnL_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_RunTurnR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_RunTurnR_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Run_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Walk.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_WalkTurnL.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_WalkTurnL_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_WalkTurnR.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_WalkTurnR_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Animations/Seq/ANIM_Wolf_Walk_RM.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Materials/M_WolfArctic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Materials/M_WolfDark.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Materials/M_WolfFurArctic.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Materials/M_WolfFurDark.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Materials/Textures/T_WolfArctic_BaseColorAlpha.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Materials/Textures/T_WolfDark_BaseColorAlpha.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Bots/Wolf/Materials/Textures/T_WolfDark_Illum.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/AnimMontages/AnimMontage_DashEnd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/AnimMontages/AnimMontage_DashStart.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Catch.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Catch_MSA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Jog_Bwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Jog_Fwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Jog_Fwd_MSA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Jog_Left.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Jog_Right.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_SwordInWorld_Pose.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_SwordInWorld_Pose_MSA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Targeting.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Targeting_Intro.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Targeting_Intro_MSA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Targeting_MSA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_Q_Throw.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_RMB.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_RMB_MSA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_RMB_NoSword.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_RMB_NoSword_MSA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_R_Intro.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Ability_R_Intro_SwordInWorld.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Bound.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Cast.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Death_Bwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_DeepBreath.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_DeepBreath_Intro.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_DeepBreath_Loop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_DeepBreath_Outro.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_Laugh.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_RallyUp.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_RallyUp_Intro.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_RallyUp_Loop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_RallyUp_Outro.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Emote_SwordPoint_M1.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/FrontEndPose.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/FrontEndPose_01.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/FrontEndPose_02.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/FrontEndPose_03.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Hitreact_Bwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Hitreact_Fwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Hitreact_Left.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Hitreact_Right.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Idle_Additive.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Idle_FacePose.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Idle_Noise.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Idle_TravelMode_Additive.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Idle_TravelMode_Corrective.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Idle_TravelMode_SwordPosition.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_BwdToFwd_Spin_ccw.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_BwdToFwd_Spin_cw.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Bwd_CircleLeft.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Bwd_CircleRight.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Bwd_Downhill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Bwd_Pivot180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Bwd_Uphill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Bwd_noWep.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_FwdToBwd_Spin_ccw.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_FwdToBwd_Spin_cw.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Fwd_CircleLeft.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Fwd_CircleRight.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Fwd_Downhill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Fwd_Pivot180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Fwd_Uphill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Fwd_noWep.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Left_CircleLeft.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Left_CircleRight.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Left_Downhill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Left_Pivot180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Left_Uphill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Left_noWep.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Right_CircleLeft.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Right_CircleRight.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Right_Downhill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Right_Pivot180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Right_Uphill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Right_noWep.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Strafe_Left.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jog_Strafe_Right.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jump_Recovery.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jump_TravelMode_Apex.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jump_TravelMode_Land.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jump_TravelMode_Recovery.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jump_TravelMode_Recovery_Additive.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Jump_TravelMode_Start.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Knockback_Bwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Knockback_Fwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/LaunchPad.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/LevelStart.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/PrimaryAttack_A_Slow_Recovery.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/PrimaryAttack_Air.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/PrimaryAttack_C_Slow_Recovery.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Recall.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Recall_SwordInWorld.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_BwdToFwd_Spin_CCW.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_BwdToFwd_Spin_CW.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Bwd_CircleLeft.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Bwd_CircleRight.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Bwd_Pivot180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_FwdToBwd_Spin_CCW.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_FwdToBwd_Spin_CW.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Fwd_CircleLeft.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Fwd_CircleRight.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Fwd_Downhill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Fwd_Pivot180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Fwd_Uphill.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Left_Pivot180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Right_Pivot180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Sprint_Right_Start.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/TravelMode_Start.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/TravelMode_Start_MSA.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/TurnInPlace_Left_Fast.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/TurnInPlace_Zero.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Turn_Left_180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Turn_Left_180_TravelMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Turn_Left_90.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Turn_Left_90_TravelMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Turn_Right_180.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Turn_Right_180_TravelMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Turn_Right_90.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/SkeletalMeshes/Character/Animations/Seq/Turn_Right_90_TravelMode.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Enviroment/Cube.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Enviroment/Wall.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack1_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack1_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack1_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack1_2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack1_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack1_3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack1_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack1_4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack2_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack2_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack2_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack2_2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack2_3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack2_3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack2_4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack2_4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack3.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack3.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/LongSword/Animations/AnimMontages/AnimMontage_LongSword_Attack4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/AnimMontages/AnimMontage_Attack2_Pistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/AnimMontages/AnimMontage_Attack2_Pistol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/AnimMontages/AnimMontage_Fire_Pistol.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Pistol/Animations/AnimMontages/AnimMontage_Fire_Pistol.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack1_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack1_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack2_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack2_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack3_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack3_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack4_Spear.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack4_Spear.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/AnimMontages/AnimMontage_Attack_Spear.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogLoop_Spear.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogStart_Spear.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/BlendSpaces/BS_JogStop_Spear.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Dash_Attack.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd_Start.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Bwd_Stop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd_Start.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Fwd_Stop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Left.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Left_Stop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Right.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Jog_Right_Stop.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Meshes/StaticMeshes/Weapons/Spear/Animations/Sequences/Melee_C_Med.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/main_menu.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DRL.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/DRL.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/blueprint/BP_menu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/blueprint/BP_menu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,8 +40,14 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Private/Components/CharacterMovementComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" />
+      <option value="$PROJECT_DIR$/Source/DRL/Weapons/HitActions/BaseHitAction.cpp" />
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" />
     </changedPaths>
   </component>
@@ -396,6 +179,8 @@
       <updated>1615712561357</updated>
       <workItem from="1615712570037" duration="9000" />
       <workItem from="1615712616737" duration="758000" />
+      <workItem from="1615723001339" duration="1117000" />
+      <workItem from="1615725537425" duration="2007000" />
     </task>
     <servers />
   </component>

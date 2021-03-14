@@ -114,6 +114,8 @@ void UCircularAttack::BP_UseAttack_Implementation()
 {
 	Super::BP_UseAttack_Implementation();
 
+	if(!GetWeaponOwner()) return;
+
 	const float StartAngle = GetWeaponOwner()->GetActorRotation().Yaw + AngleOffset - Angle / 2;
 
 	TArray<FHitResult> AllHits;

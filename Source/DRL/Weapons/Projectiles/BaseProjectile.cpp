@@ -81,6 +81,8 @@ void ABaseProjectile::OnProjectileBeginOverlap(UPrimitiveComponent* OverlappedCo
                                                const FHitResult& SweepResult)
 {
 	if(!AttackRef) return;
+	if(OtherActor == AttackRef->GetOwner() || OtherActor == AttackRef->GetWeaponOwner()) return;
+	UE_LOG(LogTemp, Display, TEXT("Overlapped %s"), *OtherActor->GetName())
 	
 	AttackRef->AddActorToHit(OtherActor);
 	AttackRef->DoHitAction();
