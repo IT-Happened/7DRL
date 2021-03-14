@@ -129,8 +129,10 @@ USTRUCT(BlueprintType)
 struct FComboAttack
 {
 	GENERATED_BODY()
-
 public:
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attack")
+	FName AttackName = NAME_None;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attack")
 	TArray<FAttack> Attacks = {};
 	
@@ -139,6 +141,42 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attack")
 	TArray<UAnimMontage*> AttackAnimations = {};
+};
+
+UENUM(BlueprintType)
+enum EAttackActions
+{
+	AA_NONE UMETA(DisplayName = "None"),
+	AA_Light UMETA(DisplayName = "Light"),
+	AA_Dash UMETA(DisplayName = "Dash") ,
+
+	AA_MAX,
+};
+
+UCLASS(BlueprintType)
+class UCombinationsObject : public UObject
+{
+	GENERATED_BODY()
+public:
+
+	UFUNCTION(BlueprintCallable)
+	void AddNextActions(TMap<TEnumAsByte<EAttackActions>, UCombinationsObject*> NextAttack);
+
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Combo", meta = (ExposeOnSpawn = "true"))
+	FName AttackName = NAME_None;
+	
+	UPROPERTY(VisibleAnywhere, Instanced, BlueprintReadOnly, Category = "Combo")
+	TMap<TEnumAsByte<EAttackActions>, UCombinationsObject*> NextCombination = {};
+};
+
+USTRUCT(BlueprintType)
+struct FCombinations
+{
+	GENERATED_BODY()
+
+	UPROPERTY(VisibleAnywhere, Instanced, BlueprintReadWrite, Category = "Combo")
+	UCombinationsObject* RootCombo = nullptr;
 };
 
 //----------------------------------------------------------------------------------------------------------------------

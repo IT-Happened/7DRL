@@ -110,6 +110,14 @@ TArray<FName> UBaseAttackType::GetTagsToIgnore() const
 //----------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------
 
+void UCombinationsObject::AddNextActions(TMap<TEnumAsByte<EAttackActions>, UCombinationsObject*> NextAttack)
+{
+	NextCombination.Append(NextAttack);
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+
 void UCircularAttack::BP_UseAttack_Implementation()
 {
 	Super::BP_UseAttack_Implementation();
@@ -222,7 +230,6 @@ void UPierceAttack::BP_UseAttack_Implementation()
 	
 	DoHitAction();
 	EmptyHitActors();
-		
 }
 
 

@@ -6,23 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="041cf289-4171-4a66-8683-2213b76dacea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DRL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Components/BP_HealthComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Components/BP_HealthComponent.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_LakeWater.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_LakeWater.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Components/BP_AbilityComponent.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Components/BP_WeaponComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Components/BP_WeaponComponent.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_EnemyCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_EnemyCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Leader.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Leader.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Tamer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Tamer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Wolf.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Enemies/BP_Enemy_Wolf.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Level/BP_SceneGenerator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Level/BP_SceneGenerator.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Player/BP_PlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Player/BP_PlayerCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Abilities/BP_Ability.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Abilities/BP_Ability_Dash.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_BaseWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/BP_BaseWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Leader_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Leader_Bot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Tamer_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Tamer_Bot.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Wolf_Bot.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Bot/BP_Wolf_Bot.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_LongSwordWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_LongSwordWeapon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_PistolWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_PistolWeapon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_SpearWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Player/BP_SpearWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/Weapons/Projectiles/BP_SpearProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/Weapons/Projectiles/BP_SpearProjectile.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestDungeonGenerator.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestDungeonGenerator.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/TestMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/TestMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/blueprint/BP_menu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/blueprint/BP_menu.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Core/Public/Containers/Map.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/UE_4.26/Engine/Source/Runtime/Engine/Private/Components/CharacterMovementComponent.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -49,6 +52,7 @@
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/Projectiles/BaseProjectile.cpp" />
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/HitActions/BaseHitAction.cpp" />
       <option value="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.cpp" />
+      <option value="$PROJECT_DIR$/Source/DRL/Weapons/AttackTypes/BaseAttackType.h" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pk228ywCvDeZEKyQrjQLBSeSou" />
@@ -181,6 +185,7 @@
       <workItem from="1615712616737" duration="758000" />
       <workItem from="1615723001339" duration="1117000" />
       <workItem from="1615725537425" duration="2007000" />
+      <workItem from="1615730349096" duration="4063000" />
     </task>
     <servers />
   </component>
