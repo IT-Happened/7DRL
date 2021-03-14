@@ -14,6 +14,8 @@ void UBaseAttackType::BP_UseAttack_Implementation()
 
 	if(bRotateCharacterOnAttack)
 	{
+		if(!GetWeaponOwner()) return;
+		if(!Cast<APawn>(GetWeaponOwner())) return;
 		if(!Cast<APlayerController>(Cast<APawn>(GetWeaponOwner())->GetController())) return;
 		RotateCharacterToMouseCursor();
 	}
