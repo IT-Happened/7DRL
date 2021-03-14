@@ -59,10 +59,12 @@ Content/ParagonSerath/
 Content/ParagonPhase/
 Content/ParagonCountess/
 Content/BossyEnemy/
+Content/MedievalDungeon
+Content/Particles_Wind_Control_System/
 Content/AdvancedMagicFX12/
 Content/AdvancedMagicFX13/
+Content/FXVarietyPAck/
 Content/Hack_And_Slash_FX/
-Content/FXVarietyPack/
 Content/TrailPack/
 
 # Whitelist PakBlacklist-<BuildConfiguration>.txt files
